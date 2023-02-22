@@ -1,0 +1,120 @@
+body {
+    background: #2E015C;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+
+.content {
+    position: relative;
+    max-width: 1095px;
+    width: 100%;
+    height: 813px;
+    max-height: 90vh;
+    background: linear-gradient(241.84deg, #003DCE -3.61%, rgba(21, 170, 255, 0) 48.73%, rgba(20, 164, 252, 0.0598291) 48.74%, #003DCE 95.39%), linear-gradient(37.63deg, #2B62D5 5.17%, #15AAFF 59.05%);
+    border-radius: 51px;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+}
+
+.images {
+    margin: 0 73px 82px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.image {
+    border-radius: 26px;
+    background: #004BAA;
+}
+
+.image-wrap {
+    border-radius: 20px;
+    overflow: hidden;
+    transition: transform 0.3s;
+}
+
+.image-wrap img {
+    display: block;
+}
+
+.image:hover .image-wrap {
+    transform: translate(-10px, -12px);
+}
+
+.text {
+    font-family: 'PT Sans Caption';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 40px;
+    text-align: center;
+    color: #FFFFFF;
+    max-width: 589px;
+    margin: 0 auto;
+}
+
+.nav {
+    display: flex;
+    margin: 40px 82px 0;
+}
+
+.nav-item {
+    flex: 1 1 100%;
+    font-size: 0;
+    height: 6px;
+    background-color: #0096EC;
+    position: relative;
+}
+
+.nav-item::before {
+    content: '';
+    display: block;
+    height: 12px;
+    width: 2px;
+    position: absolute;
+    left: -1px;
+    top: 100%;
+    background-color: #0096EC;
+}
+
+.nav-item:first-child:before {
+    display: none;
+}
+
+.nav-item:first-child {
+    border-radius: 10px 0 0 10px;
+}
+
+.nav-item:last-child {
+    border-radius: 0 10px 10px 0;
+}
+
+.nav-item__active {
+    background: #6BFF2F;
+}
+
+.flower-left {
+    position: absolute;
+    right: calc(50% + 357px);
+    top: calc(50% - 180px);
+    width: 467px;
+    height: 570px;
+    background: url(../images/flower-left.png) 50% 50% no-repeat;
+}
+
+.flower-right {
+    position: absolute;
+    left: calc(50% + 327px);
+    top: calc(50% - 460px);
+    width: 456px;
+    height: 495px;
+    background: url(../images/flower-right.png) 50% 50% no-repeat;
+}
